@@ -5,6 +5,7 @@ export default function Seo(props) {
         <Head>
           <title>{props.titleHead}</title>
           <meta name="description" content={props.descriptionHead} />
+          <meta name="author" content={props.authorHead} />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         

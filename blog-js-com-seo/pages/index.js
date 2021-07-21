@@ -2,16 +2,27 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 //Import SEO
-import Seo from './seo/head'
+import Seo from './components/seo/head'
+
+//Componentes Layout
+import Topo from './components/topo'
+import { Wrap } from './components/wrap/style'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Wrap>
       <Seo
         titleHead="Teste de site"
-        descriptionHead="Este é meu CV online"
+        descriptionHead="Site CV André Laurentino Rodrigues"
+        authorHead="André Laurentino Rodrigues"
       />
-
-    </div>
+      <Topo
+        name="André Laurentino Rodrigues"
+        age="28 anos"
+        email="andrelaurentinomg@gmail.com"
+        city="Bambuí"
+      />
+      
+    </Wrap>
   )
 }
